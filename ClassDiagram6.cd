@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Unicorn.GameManager" Collapsed="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Unicorn.GameManager.LevelLoadType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_game\Scripts\UnicornScripts\Controller\GameManagerEditor.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="iap" Type="IapController" FixedFromPoint="true">
+      <Path>
+        <Point X="6.188" Y="2.191" />
+        <Point X="6.188" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="levelConstraint" Type="Unicorn.LevelConstraint" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.875" Y="2.191" />
+        <Point X="6.875" Y="2.566" />
+        <Point X="10.5" Y="2.566" />
+        <Point X="10.5" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="mainCamera" Type="Unicorn.CameraController" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.625" Y="2.191" />
+        <Point X="6.625" Y="3.375" />
+        <Point X="8.25" Y="3.375" />
+        <Point X="8.25" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="currentLevelManager" Type="Unicorn.LevelManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.812" Y="2.191" />
+        <Point X="5.812" Y="3.375" />
+        <Point X="4.25" Y="3.375" />
+        <Point X="4.25" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAYwDgEAAmAAABAAAACQIAAEyQAHFgADQhIgQAgCLEQ=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\GameManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentLevelManager" />
+      <Field Name="dataLevel" />
+      <Field Name="forcedLevelType" />
+      <Field Name="iap" />
+      <Field Name="Instance" />
+      <Field Name="levelConstraint" />
+      <Field Name="mainCamera" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Unicorn.LevelManager" Collapsed="true">
+    <Position X="3.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARAAAAACEAAAAAACAAAAQAAABAAAAAQAAAAAEQAEA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\LevelControl\LevelManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IapController" Collapsed="true">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAQEAACAIsAaAIAEAgDAOAQAQECEBgBCAAQABAAAEA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\IapController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Unicorn.LevelConstraint" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAABAAAAAAAAAAAAAAAAAAAAAAAAAIQACAAAAAQAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\LevelControl\LevelConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.CameraController" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAgAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\CameraController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.GameFSM" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <AssociationLine Name="reviveGameAction" Type="Unicorn.FSM.ReviveAction" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.75" Y="2.062" />
+        <Point X="15.5" Y="2.062" />
+        <Point X="15.5" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="tycoonGameAction" Type="Unicorn.FSM.TycoonAction" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.75" Y="1.875" />
+        <Point X="13.25" Y="1.875" />
+        <Point X="13.25" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ICAAECAAgBEABABRSCQAAAAAACAAAACAAAAAAQAAACA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\FSM\GameFSM.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="endGameAction" />
+      <Field Name="endGameState" />
+      <Field Name="inGameAction" />
+      <Field Name="inGameState" />
+      <Field Name="lobbyGameAction" />
+      <Field Name="lobbyGameState" />
+      <Field Name="preparationState" />
+      <Field Name="reviveGameAction" />
+      <Field Name="reviveGameState" />
+      <Field Name="tycoonGameAction" />
+      <Field Name="tycoonGameState" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Unicorn.FSM.EndgameAction" Collapsed="true">
+    <Position X="20.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAIAAAAAAEAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\FSM\EndgameAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.FSM.FSMState" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAgCAAAAAAAABAAAAABAIAAAAAAAIgBgA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Utils\FSM\FSMState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.FSM.InGameAction" Collapsed="true">
+    <Position X="18.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAIAAAAEAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\FSM\InGameAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.FSM.LobbyAction" Collapsed="true">
+    <Position X="16.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\FSM\LobbyAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.FSM.ReviveAction" Collapsed="true">
+    <Position X="14.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\FSM\ReviveAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.FSM.TycoonAction" Collapsed="true">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAIAAAAEAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Bunker\TycoonAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerDataManager" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARRAKBQiIACCACIQABAQQFUlIAYiAgIAy4woQZIECEE=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\PlayerDataManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Unicorn.UI.UiController" Collapsed="true">
+    <Position X="7.5" Y="6.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Unicorn.UI.UiController.ScreenState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_game\Scripts\UnicornScripts\Controller\UiController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="Loading" Type="Unicorn.UI.UiLoading" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="6.812" />
+        <Point X="16.184" Y="6.812" />
+        <Point X="16.184" Y="12" />
+        <Point X="15" Y="12" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="LuckyWheel" Type="Unicorn.UI.LuckyWheel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="7" />
+        <Point X="12.711" Y="7" />
+        <Point X="12.711" Y="12.062" />
+        <Point X="12" Y="12.062" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="PopupRewardEndGame" Type="Unicorn.UI.PopupRewardEndGame" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="7.25" />
+        <Point X="9.375" Y="7.25" />
+        <Point X="9.375" Y="11.923" />
+        <Point X="9" Y="11.923" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiEquipmentSystemBrain" Type="Snowyy.EquipmentSystem.UiEquipmentSystemBrain" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="7.096" />
+        <Point X="4.008" Y="7.096" />
+        <Point X="4.008" Y="12.125" />
+        <Point X="4.75" Y="12.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiLose" Type="Unicorn.UI.UiLose" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.562" Y="6.812" />
+        <Point X="1.008" Y="6.812" />
+        <Point X="1.008" Y="12.125" />
+        <Point X="1.75" Y="12.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiMainLobby" Type="Unicorn.UI.UiMainLobby" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="7.25" />
+        <Point X="11.167" Y="7.25" Type="JumpStart" />
+        <Point X="11.333" Y="7.25" Type="JumpEnd" />
+        <Point X="12.627" Y="7.25" Type="JumpStart" />
+        <Point X="12.794" Y="7.25" Type="JumpEnd" />
+        <Point X="15.375" Y="7.25" />
+        <Point X="15.375" Y="11.125" />
+        <Point X="15" Y="11.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiNotEnough" Type="Arena.UiNotEnough" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="7.312" />
+        <Point X="11.167" Y="7.312" Type="JumpStart" />
+        <Point X="11.333" Y="7.312" Type="JumpEnd" />
+        <Point X="12.627" Y="7.312" Type="JumpStart" />
+        <Point X="12.794" Y="7.312" Type="JumpEnd" />
+        <Point X="14.25" Y="7.312" />
+        <Point X="14.25" Y="9.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiPause" Type="Unicorn.UI.UiPause" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="7.438" />
+        <Point X="9.292" Y="7.437" Type="JumpStart" />
+        <Point X="9.458" Y="7.438" Type="JumpEnd" />
+        <Point X="11.167" Y="7.437" Type="JumpStart" />
+        <Point X="11.333" Y="7.438" Type="JumpEnd" />
+        <Point X="12.375" Y="7.438" />
+        <Point X="12.375" Y="10.812" />
+        <Point X="12" Y="10.812" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiPopupUsername" Type="UiPopupUsername" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="7.125" />
+        <Point X="11.25" Y="7.125" />
+        <Point X="11.25" Y="9.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiQuitLevel" Type="Unicorn.UI.UiQuitLevel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9" Y="7.375" />
+        <Point X="9.23" Y="7.375" />
+        <Point X="9.23" Y="10.875" />
+        <Point X="9" Y="10.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiSetting" Type="Unicorn.UI.UISetting" FixedFromPoint="true">
+      <Path>
+        <Point X="8.25" Y="7.441" />
+        <Point X="8.25" Y="9.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiStage" Type="Unicorn.UI.UiStage" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="7.25" />
+        <Point X="4.375" Y="7.25" />
+        <Point X="4.375" Y="10.875" />
+        <Point X="4.75" Y="10.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiSurvivorShop" Type="Arena.UiSurvivorShop" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="7.312" />
+        <Point X="5.5" Y="7.312" />
+        <Point X="5.5" Y="9.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiTop" Type="Unicorn.UI.UiTop" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="6.875" />
+        <Point X="1.008" Y="6.875" />
+        <Point X="1.008" Y="10.938" />
+        <Point X="1.75" Y="10.938" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UiWin" Type="Unicorn.UI.UiWin" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="7" />
+        <Point X="2.5" Y="7" />
+        <Point X="2.5" Y="9.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>LAAACQSBAQAIAAAAAAEIBMAABAADkWhIQUACAAAASAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\UiController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Loading" />
+      <Field Name="LuckyWheel" />
+      <Field Name="PopupRewardEndGame" />
+      <Field Name="UiEquipmentSystemBrain" />
+      <Field Name="UiLose" />
+      <Field Name="UiMainLobby" />
+      <Field Name="UiNotEnough" />
+      <Field Name="UiPause" />
+      <Field Name="UiPopupUsername" />
+      <Field Name="UiQuitLevel" />
+      <Field Name="UiSetting" />
+      <Field Name="UiStage" />
+      <Field Name="UiSurvivorShop" />
+      <Field Name="UiTop" />
+      <Field Name="UiWin" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Unicorn.UI.UiLoading" Collapsed="true">
+    <Position X="13.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\UiLoading.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.UI.LuckyWheel" Collapsed="true">
+    <Position X="10.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICQlAAoKgCCgBABAAAEABAAACwAEABAAAAACEgAAQAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\LuckyWheel\LuckyWheel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.UI.PopupRewardEndGame" Collapsed="true">
+    <Position X="7.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAgAAACQAAAAAEAAAABAAASAAAABAAoACAAAAgAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\PopupRewardEndGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.UiEquipmentSystemBrain" Collapsed="true">
+    <Position X="4.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAARAAAAAAICAAAAAEAAAACAAAAAQBAAAAAAAEA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\UiEquipmentSystemBrain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.UI.UiLose" Collapsed="true">
+    <Position X="1.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAQAAACAAgAAFAAEAAAEAAAAEAEAAAACAAAAAIBA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\UiLose.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.UI.UiMainLobby" Collapsed="true">
+    <Position X="13.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARAAAAACIAgAAAAAAGAAAAAAgEggAAAAAGEAAAAIY=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\UiMainLobby.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arena.UiNotEnough" Collapsed="true">
+    <Position X="13.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAEACAAAAAAEBAAAEAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\001 IAP Shop\001 Scripts\UiNotEnough.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.UI.UiPause" Collapsed="true">
+    <Position X="10.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAACAAAAAAAAAAAAEAAgAAAAAAAAgAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\UiPause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UiPopupUsername" Collapsed="true">
+    <Position X="10.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAACAAAAAAAAgEQAAAIAEGECAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Canvas\PopupUserName\UiPopupUsername.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.UI.UiQuitLevel" Collapsed="true">
+    <Position X="7.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAIAAAAAAAgAAAAAAAGAEAAAAAAAAAgAAAEA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\UiQuitLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.UI.UISetting" Collapsed="true">
+    <Position X="7.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAABIBAAEAAAAAAgAAAAAAQAAAEAgAAAYAABggAAHA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\UISetting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.UI.UiStage" Collapsed="true">
+    <Position X="4.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\UiStage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arena.UiSurvivorShop" Collapsed="true">
+    <Position X="4.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAABAIQAAAAAAAAAAggAAAkAAAAAgACAAAAIAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\001 IAP Shop\001 Scripts\UiSurvivorShop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.UI.UiTop" Collapsed="true">
+    <Position X="1.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKRAADQACKQkAAFAAAAgoCKgAAIAAKIAAgAAoAASAE=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\UiTop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.UI.UiWin" Collapsed="true">
+    <Position X="1.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAABCDAAABAAAAAACAAAIIMAAAAgAACAAIAIAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\UI\UiWin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerStateMachine" Collapsed="true">
+    <Position X="26.25" Y="13.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Unicorn.PlayerStateMachine.SupState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerStateMachine.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Unicorn.PlayerStateMachine.SubState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerStateMachine.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="m_bodyCollision" Type="Unicorn.PlayerBodyCollisionHandler" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27.75" Y="13.312" />
+        <Point X="30" Y="13.312" />
+        <Point X="30" Y="12.691" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="m_BuildManager" Type="Unicorn.PlayerBuildManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="26.25" Y="13.812" />
+        <Point X="22" Y="13.812" />
+        <Point X="22" Y="12.691" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="m_health" Type="Unicorn.Health" FixedFromPoint="true">
+      <Path>
+        <Point X="27.75" Y="13.5" />
+        <Point X="32" Y="13.5" />
+        <Point X="32" Y="12.691" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="m_HealthBar" Type="Unicorn.WorldspaceHealthBar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27.75" Y="13.625" />
+        <Point X="33.875" Y="13.625" />
+        <Point X="33.875" Y="12.691" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="m_PlayerSkillController" Type="PlayerSkillController" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27.625" Y="13.941" />
+        <Point X="27.625" Y="15" />
+        <Point X="29.5" Y="15" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BFYACghyAkEAQAqAgAoFESBREJACAMgBQgAAKgeAiFA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerStateMachine.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_currentState" />
+      <Field Name="_states" />
+      <Field Name="Instance" />
+      <Field Name="m_bodyCollision" />
+      <Field Name="m_BuildManager" />
+      <Field Name="m_health" />
+      <Field Name="m_HealthBar" />
+      <Field Name="m_PlayerEquipment" />
+      <Field Name="m_PlayerSkillController" />
+      <Field Name="m_VisionCollide" />
+      <Field Name="weaponManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Unicorn.PlayerBaseState" Collapsed="true">
+    <Position X="27" Y="16.5" Width="1.5" />
+    <AssociationLine Name="_ctx" Type="Unicorn.PlayerStateMachine" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27.5" Y="16.5" />
+        <Point X="27.5" Y="15.562" />
+        <Point X="27.5" Y="15.562" />
+        <Point X="27.5" Y="13.941" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_factory" Type="Unicorn.PlayerStateFactory" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27" Y="16.75" />
+        <Point X="26.625" Y="16.75" />
+        <Point X="26.625" Y="15.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IACAAAABCAAAoAIAIAAAAAAQAAABABAAAAICBAAEAgA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerBaseState.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_ctx" />
+      <Field Name="_currentSubState" />
+      <Field Name="_currentSuperState" />
+      <Field Name="_factory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Unicorn.PlayerStateFactory" Collapsed="true">
+    <Position X="25.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAgAAAAAAAAAIAAoAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerStateFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Unicorn.PlayerBodyCollisionHandler" Collapsed="true">
+    <Position X="29.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQEEiAAAAAABAAAAAAAAAAAAACMAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerBodyCollisionHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerBuildManager" Collapsed="true">
+    <Position X="21.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAggAAAAAAAAAAAACAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerBuildManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.Health" Collapsed="true">
+    <Position X="31.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAImAABIBUACCCTACAEAAAQIEAAAAAAAAAQCihAACRI=</HashCode>
+      <FileName>Assets\_game\Scripts\Misc\Health\Health.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.WorldspaceHealthBar" Collapsed="true">
+    <Position X="33.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAQCAAAQAAAIAAAAAAAAAABAAAAACQAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Misc\Health\WorldspaceHealthBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerSkinChanger" Collapsed="true">
+    <Position X="25.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECASIEIABAAACAEECBACggCBIAgAAAACAWABAACGE=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerSkinChanger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerSkillController" Collapsed="true">
+    <Position X="29.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEACAACAAAAAAAAAAAAAAAAAAAAAIAAAAAgAACAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerSkill\PlayerSkillController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerVisionCollideHandler" Collapsed="true">
+    <Position X="27.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAAAAAQAAAAAAAgABAgAAAAIABQAAAAAEAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerVisionCollideHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.WeaponManager" Collapsed="true">
+    <Position X="23.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAIAAAAAAIAAAAAACAAAAAFA=</HashCode>
+      <FileName>Assets\_game\Scripts\Weapon\WeaponManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerAttackState" Collapsed="true">
+    <Position X="33.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerAttackState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerBuildState" Collapsed="true">
+    <Position X="23.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAAAAAAQAAAAAACAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerBuildState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerDefendState" Collapsed="true">
+    <Position X="29.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerDefendState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerDieState" Collapsed="true">
+    <Position X="19.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerDieState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerIdleState" Collapsed="true">
+    <Position X="31.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerIdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerReviveState" Collapsed="true">
+    <Position X="21.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerReviveState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerShootState" Collapsed="true">
+    <Position X="25.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGBAAAAAIIAIAACIACBBCAQAAAEAAoAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerShootState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerWalkState" Collapsed="true">
+    <Position X="27.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACBAEAAAIIAIAAAAAABAAAQAAAEAAgAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerWalkState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Unicorn.IDataLevel" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAIAAAAAAAQAAAQAAAAIAACAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Controller\LevelControl\IDataLevel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="LevelType" Collapsed="true">
+    <Position X="1.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\UnicornScripts\Utils\EnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

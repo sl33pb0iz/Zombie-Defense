@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 88c9ca8e7519a1f4fb2f975d4a356895
+timeCreated: 1504680867
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SVN-Neusa
+  fontNames:
+  - SVN-Neusa
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

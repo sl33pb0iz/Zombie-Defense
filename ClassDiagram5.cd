@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SkillController" Collapsed="true">
+    <Position X="3" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAEAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerSkill\SkillController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InvincibleSkillController" Collapsed="true">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerSkill\InvincibleSkillController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LightningSkillController" Collapsed="true">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAFAAAAAAEAAAAAAAAAEAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerSkill\LightningSkillController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RocketSkillController" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAABgAAAAAEACAhAAAAAACEgAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerSkill\RocketSkillController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TornadoSkillController" Collapsed="true">
+    <Position X="4.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAEAAAAAAAAAAAAwAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerSkill\TornadoSkillController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerSkillController" Collapsed="true">
+    <Position X="7.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEACAACAAAAAAAAAAAAAAAAAAAAAIAAAAAgAACAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerSkill\PlayerSkillController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="m_ListSkills" />
+      <Field Name="m_Skills" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

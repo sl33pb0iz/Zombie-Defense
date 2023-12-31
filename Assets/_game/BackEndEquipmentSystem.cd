@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Snowyy.EquipmentSystem.DataItemTemplate" Collapsed="true">
+    <Position X="10.75" Y="3.25" Width="2" />
+    <AssociationLine Name="arrEquipmentTypesInUsed" Type="Snowyy.EquipmentType" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.562" Y="3.941" />
+        <Point X="12.562" Y="4.125" />
+        <Point X="18.375" Y="4.125" />
+        <Point X="18.375" Y="4.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="dictItemTemplates" Type="Snowyy.EquipmentSystem.ItemTemplate" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="3.25" />
+        <Point X="11.5" Y="2.5" />
+        <Point X="17.75" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAEBAAAAAAAEAAACEAAAAAIAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\DataItemTemplate.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="arrEquipmentTypesInUsed" />
+      <Field Name="dictItemTemplates" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.Equipment" Collapsed="true">
+    <Position X="23.75" Y="3" Width="1.5" />
+    <AssociationLine Name="EquipmentType" Type="Snowyy.EquipmentType" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="24" Y="3.562" />
+        <Point X="24" Y="4.625" />
+        <Point X="21.99" Y="4.625" Type="JumpStart" />
+        <Point X="21.823" Y="4.625" Type="JumpEnd" />
+        <Point X="19.25" Y="4.625" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="itemTemplate" Type="Snowyy.EquipmentSystem.ItemTemplate" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="24.562" Y="3" />
+        <Point X="24.562" Y="2.375" />
+        <Point X="19.25" Y="2.375" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACABAAAAAAAAAQAAAAAAAABAAUQAAAAAAgCAAAAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\Equipment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="EquipmentType" />
+      <Field Name="itemTemplate" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.EquipmentData" Collapsed="true">
+    <Position X="17.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAAAAAAAAQAAAAAAAAAAAEQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\EquipmentDataManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="EquipmentType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.EquipmentDataManager" Collapsed="true">
+    <Position X="17.5" Y="3" Width="2" />
+    <AssociationLine Name="dataItemTemplate" Type="Snowyy.EquipmentSystem.DataItemTemplate" FixedToPoint="true">
+      <Path>
+        <Point X="17.5" Y="3.438" />
+        <Point X="12.75" Y="3.438" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ListAllEquipments" Type="Snowyy.EquipmentSystem.Equipment" FixedFromPoint="true">
+      <Path>
+        <Point X="19.5" Y="3.375" />
+        <Point X="23.75" Y="3.375" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAEAIIAAAgQAAAAAIAIAABCAAEAIAAAYAAACAAgIUA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\EquipmentDataManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataItemTemplate" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="ListAllEquipments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.EquipmentGenerator" Collapsed="true">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAFAAACAAAAAAAAAAAAAAAAAAAYAAAgAACAEA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\EquipmentGenerator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Instance" />
+      <Field Name="dataItemTemplate" />
+      <Field Name="arrRarity" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.ItemTemplate" Collapsed="true">
+    <Position X="17.75" Y="2" Width="1.5" />
+    <AssociationLine Name="resourceToUpgrade" Type="Snowyy.ResourceType" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.25" Y="2.188" />
+        <Point X="19.49" Y="2.188" />
+        <Point X="19.49" Y="0.781" />
+        <Point X="19.75" Y="0.781" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="arrEffects" Type="Snowyy.EffectType" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.75" Y="2.375" />
+        <Point X="14.5" Y="2.375" />
+        <Point X="14.5" Y="1.062" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="itemSet" Type="Snowyy.ItemSet" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.75" Y="2.25" />
+        <Point X="16.875" Y="2.25" />
+        <Point X="16.875" Y="1.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEACAAAAAAAAAAIAIAAAAAAAAAAEAAAAAAAAIAIAQAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\ItemTemplate.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="resourceToUpgrade" />
+      <Field Name="arrEffects" />
+      <Field Name="weaponType" />
+      <Field Name="itemSet" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.EquipSlotManager" Collapsed="true">
+    <Position X="15.25" Y="5.25" Width="1.5" />
+    <AssociationLine Name="arrEquipmentTypeHp" Type="Snowyy.EquipmentType" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.406" Y="5.25" />
+        <Point X="16.406" Y="4.875" />
+        <Point X="17.75" Y="4.875" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BACCAAAAAAAAAgAAAAAIAAAIAQIAQEAAAAAiAAAAAEA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\EquipSlotManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="arrEquipmentTypeAtk" />
+      <Field Name="arrEquipmentTypeHp" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.InventoryManager" Collapsed="true">
+    <Position X="10.5" Y="11.25" Width="1.5" />
+    <AssociationLine Name="itemEquipmentPrefab" Type="Snowyy.EquipmentSystem.ItemEquipment" FixedFromPoint="true">
+      <Path>
+        <Point X="12" Y="11.625" />
+        <Point X="13" Y="11.625" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="listAllEquipments" Type="Snowyy.EquipmentSystem.Equipment" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.25" Y="11.941" />
+        <Point X="11.25" Y="12.888" />
+        <Point X="13.542" Y="12.888" Type="JumpStart" />
+        <Point X="13.708" Y="12.888" Type="JumpEnd" />
+        <Point X="25.188" Y="12.888" />
+        <Point X="25.188" Y="3.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQgAYAAAASCAEAAEAAAQAAAAgAAARAEAAgADABAAEEA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\InventoryManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="itemEquipmentPrefab" />
+      <Field Name="arrSortType" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="listAllEquipments" />
+      <Field Name="listItemEquipments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.ItemEquipment" Collapsed="true">
+    <Position X="13" Y="11.25" Width="1.5" />
+    <AssociationLine Name="data" Type="Snowyy.EquipmentSystem.DataRarityEffect" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.375" Y="11.25" />
+        <Point X="14.375" Y="9.875" />
+        <Point X="15.75" Y="9.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="dataItemTemplate" Type="Snowyy.EquipmentSystem.DataItemTemplate" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.625" Y="11.941" />
+        <Point X="13.625" Y="13.172" />
+        <Point X="5.896" Y="13.172" />
+        <Point X="5.896" Y="3.812" />
+        <Point X="10.75" Y="3.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAEAAAAAACAAAAAAAAAQAAAAAAAAACAAIAASAQAAIBA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\ItemEquipment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="data" />
+      <Field Name="dataItemTemplate" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.DataRarityEffect" Collapsed="true">
+    <Position X="15.75" Y="9.25" Width="1.5" />
+    <AssociationLine Name="dictRarityBasedSprites" Type="Snowyy.EquipmentSystem.RarityBasedSprite" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.812" Y="9.941" />
+        <Point X="16.812" Y="11.562" />
+        <Point X="17.5" Y="11.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEABAAAAAAAAAAAAAAAAgAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\DataRarityEffect.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="dictRarityBasedSprites" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.RarityBasedSprite" Collapsed="true">
+    <Position X="17.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAEAAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\RarityBasedSprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snowyy.MergeSystem.ItemCurrentEquipment" Collapsed="true">
+    <Position X="14.75" Y="11.25" Width="2" />
+    <AssociationLine Name="dataRarityEffect" Type="Snowyy.EquipmentSystem.DataRarityEffect" FixedFromPoint="true">
+      <Path>
+        <Point X="16.583" Y="11.25" />
+        <Point X="16.583" Y="9.941" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECACAAAAAAAAAAAAAAAAAABAAABSAQgAABA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\ItemCurrentEquipment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataRarityEffect" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.ItemEquippedSlot" Collapsed="true">
+    <Position X="20.25" Y="6.75" Width="1.5" />
+    <AssociationLine Name="BindedEquipment" Type="Snowyy.EquipmentSystem.Equipment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.75" Y="7.125" />
+        <Point X="21.823" Y="7.125" Type="JumpStart" />
+        <Point X="21.99" Y="7.125" Type="JumpEnd" />
+        <Point X="24.938" Y="7.125" />
+        <Point X="24.938" Y="3.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAESAAEBAAAAAAAABAAQAQAABAAABSQQAAIBA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\ItemEquippedSlot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataStats" />
+      <Field Name="dataRarityEffect" />
+      <Field Name="BindedEquipment" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.DataStats" Collapsed="true">
+    <Position X="19.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgCAAAMDAAAACAAAAAAEAAGAAICAAAAARAAEEAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\DataStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snowyy.MergeSystem.ItemMergedMaterial" Collapsed="true">
+    <Position X="12.25" Y="6.75" Width="1.5" />
+    <AssociationLine Name="dataRarityEffect" Type="Snowyy.EquipmentSystem.DataRarityEffect" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.062" Y="7.441" />
+        <Point X="13.062" Y="9.688" />
+        <Point X="13.729" Y="9.688" Type="JumpStart" />
+        <Point X="13.895" Y="9.688" Type="JumpEnd" />
+        <Point X="15.75" Y="9.688" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="dataItemTemplate" Type="Snowyy.EquipmentSystem.DataItemTemplate" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.25" Y="7.187" />
+        <Point X="11.688" Y="7.187" />
+        <Point X="11.688" Y="3.941" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECACAAQAAAAAAAAAAAAAAABAIABSAQAAIBA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\ItemMergedMaterial.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataRarityEffect" />
+      <Field Name="dataItemTemplate" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.MergeSystem.ItemMergeEquipment" Collapsed="true">
+    <Position X="17.5" Y="6.75" Width="1.5" />
+    <AssociationLine Name="dataRarityEffect" Type="Snowyy.EquipmentSystem.DataRarityEffect" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.75" Y="7.441" />
+        <Point X="17.75" Y="8.684" />
+        <Point X="16.75" Y="8.684" />
+        <Point X="16.75" Y="9.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="dataItemTemplate" Type="Snowyy.EquipmentSystem.DataItemTemplate" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.187" Y="6.75" />
+        <Point X="18.187" Y="6.325" />
+        <Point X="14.771" Y="6.325" Type="JumpStart" />
+        <Point X="14.605" Y="6.325" Type="JumpEnd" />
+        <Point X="12.438" Y="6.325" />
+        <Point X="12.438" Y="3.941" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="bindedEquipment" Type="Snowyy.EquipmentSystem.Equipment" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.375" Y="6.75" />
+        <Point X="18.375" Y="6.269" />
+        <Point X="21.823" Y="6.269" Type="JumpStart" />
+        <Point X="21.99" Y="6.269" Type="JumpEnd" />
+        <Point X="24.375" Y="6.269" />
+        <Point X="24.375" Y="3.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AABAAAAAECAAAAAAAAAAAAAAAAAAAABBIABSAAAEIRA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\ItemMergeEquipment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataRarityEffect" />
+      <Field Name="dataItemTemplate" />
+      <Field Name="bindedEquipment" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.MergeSystem.ItemMergeResultEquipment" Collapsed="true">
+    <Position X="14.75" Y="6.75" Width="1.5" />
+    <AssociationLine Name="dataRarityEffect" Type="Snowyy.EquipmentSystem.DataRarityEffect" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.125" Y="7.441" />
+        <Point X="15.125" Y="9.5" />
+        <Point X="15.75" Y="9.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="dataItemTemplate" Type="Snowyy.EquipmentSystem.DataItemTemplate" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.75" Y="7.25" />
+        <Point X="14.375" Y="7.25" />
+        <Point X="14.375" Y="6.564" />
+        <Point X="12.125" Y="6.564" />
+        <Point X="12.125" Y="3.941" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIEAAAAAEAACAAAAAAQEQAAAAQAAAABAIAISAIAAIRQ=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\ItemMergeResultEquipment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataRarityEffect" />
+      <Field Name="dataItemTemplate" />
+      <Field Name="dataStats" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.MergeSystem.MergeBotManager" Collapsed="true">
+    <Position X="20.5" Y="9.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Snowyy.MergeSystem.MergeBotManager.OnMergeItemChangedEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\MergeBotManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <AssociationLine Name="dataRarityEffect" Type="Snowyy.EquipmentSystem.DataRarityEffect" FixedToPoint="true">
+      <Path>
+        <Point X="20.5" Y="9.941" />
+        <Point X="17.25" Y="9.941" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="itemEquipmentPrefab" Type="Snowyy.MergeSystem.ItemMergeEquipment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.5" Y="9.812" />
+        <Point X="18.516" Y="9.812" />
+        <Point X="18.516" Y="7.441" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="listAllEquipmentsIncludeEquipped" Type="Snowyy.EquipmentSystem.Equipment" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22" Y="9.812" />
+        <Point X="25.062" Y="9.812" />
+        <Point X="25.062" Y="3.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAIAQCECBEAQRACRAQAQAAAAAAAIQQIAADgIACAAE=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\MergeBotManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="btnFilterTypes" />
+      <Field Name="dataRarityEffect" />
+      <Field Name="dataItemTemplate" />
+      <Field Name="itemEquipmentPrefab" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="listAllEquipmentsIncludeEquipped" />
+      <Field Name="listItemUiEquipment" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Snowyy.MergeSystem.ButtonFilter" Collapsed="true">
+    <Position X="20.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAACAgAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\MergeBotManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snowyy.MergeSystem.MergeTopManager" Collapsed="true">
+    <Position X="13.25" Y="8.25" Width="1.5" />
+    <AssociationLine Name="itemResultEquipment" Type="Snowyy.MergeSystem.ItemMergeResultEquipment" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.75" Y="8.461" />
+        <Point X="14.875" Y="8.461" />
+        <Point X="14.875" Y="7.441" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="itemCurrentEquipment" Type="Snowyy.MergeSystem.ItemCurrentEquipment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.812" Y="8.941" />
+        <Point X="13.812" Y="10.875" />
+        <Point X="14.292" Y="10.875" Type="JumpStart" />
+        <Point X="14.458" Y="10.875" Type="JumpEnd" />
+        <Point X="15.291" Y="10.875" />
+        <Point X="15.291" Y="11.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAIAAEAAyAAAAEgAiABAAAAQAAUAAAAAAAECAAAAAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\MergeTopManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="itemResultEquipment" />
+      <Field Name="itemCurrentEquipment" />
+      <Field Name="itemMergedMaterials" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Snowyy.EquipmentSystem.UiEquipmentSystem" Collapsed="true">
+    <Position X="10.75" Y="7.75" Width="1.5" />
+    <AssociationLine Name="equipSlotManager" Type="Snowyy.EquipmentSystem.EquipSlotManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12" Y="7.75" />
+        <Point X="12" Y="7.504" />
+        <Point X="14.688" Y="7.504" />
+        <Point X="14.688" Y="5.596" />
+        <Point X="15.25" Y="5.596" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACBAIgAAEQAAMAAAAAQEIAAAIAACAAAAAEA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\01 Frontend\UiEquipmentSystem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="equipSlotManager" />
+      <Field Name="inventoryManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Snowyy.EquipmentType" Collapsed="true">
+    <Position X="17.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAABAAAAAAAAAAgAEAAAAAAAAQI=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\EnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Snowyy.Rarity" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAABAAAAAAAAAAAlAAAAAAAAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\EnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Snowyy.EffectType" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAACAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\EnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Snowyy.ItemSet" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQQAAEACAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\EnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Snowyy.ResourceType" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAgAAAAAAAQAAAAAgAgAAAAAQAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\EnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Snowyy.WeaponType" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgACAAAAEAAAABEAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\EnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Snowyy.SortType" Collapsed="true">
+    <Position X="8.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAEAAgA=</HashCode>
+      <FileName>Assets\1_Stick_War1\Arena\000 Equipment System\001 Script\00 Backend\EnumCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

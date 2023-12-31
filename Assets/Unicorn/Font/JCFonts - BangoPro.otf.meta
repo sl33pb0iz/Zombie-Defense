@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 750393ed9cb4af44f9e28827676b6b72
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: iCiel Crocante
+  fontNames:
+  - iCiel Crocante
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 348e116fe71a3644b90966df957e53b7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

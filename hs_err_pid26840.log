@@ -1,0 +1,154 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=26840, tid=0x0000000000002114
+#
+# JRE version:  (8.0) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.71-b00 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000027a2800):  JavaThread "Unknown thread" [_thread_in_vm, id=8468, stack(0x0000000002640000,0x0000000002740000)]
+
+Stack: [0x0000000002640000,0x0000000002740000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000027a2800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8468, stack(0x0000000002640000,0x0000000002740000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 75776K, used 1300K [0x000000076be00000, 0x0000000771280000, 0x00000007c0000000)
+  eden space 65024K, 2% used [0x000000076be00000,0x000000076bf451f8,0x000000076fd80000)
+  from space 10752K, 0% used [0x0000000770800000,0x0000000770800000,0x0000000771280000)
+  to   space 10752K, 0% used [0x000000076fd80000,0x000000076fd80000,0x0000000770800000)
+ ParOldGen       total 173568K, used 0K [0x00000006c3a00000, 0x00000006ce380000, 0x000000076be00000)
+  object space 173568K, 0% used [0x00000006c3a00000,0x00000006c3a00000,0x00000006ce380000)
+ Metaspace       used 777K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 74K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000011c60000,0x0000000012450000] byte_map_base: 0x000000000e643000
+
+Marking Bits: (ParMarkBitMap*) 0x000000005532be50
+ Begin Bits: [0x00000000133a0000, 0x00000000172b8000)
+ End Bits:   [0x00000000172b8000, 0x000000001b1d0000)
+
+Polling page: 0x0000000000d10000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x00000000028a0000, 0x0000000002b10000, 0x00000000118a0000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.032 loading class java/lang/Short
+Event: 0.032 loading class java/lang/Short done
+Event: 0.032 loading class java/lang/Integer
+Event: 0.032 loading class java/lang/Integer done
+Event: 0.032 loading class java/lang/Long
+Event: 0.033 loading class java/lang/Long done
+Event: 0.033 loading class java/lang/NullPointerException
+Event: 0.033 loading class java/lang/NullPointerException done
+Event: 0.033 loading class java/lang/ArithmeticException
+Event: 0.033 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff6e5480000 - 0x00007ff6e54b5000 	E:\2021.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\java.exe
+0x00007ff82a910000 - 0x00007ff82ab25000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff82a150000 - 0x00007ff82a215000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff828300000 - 0x00007ff8286a7000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff82a670000 - 0x00007ff82a721000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff828f40000 - 0x00007ff828fe7000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff82a5c0000 - 0x00007ff82a666000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff82a220000 - 0x00007ff82a349000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff829020000 - 0x00007ff8291d0000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff828220000 - 0x00007ff828246000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff828a90000 - 0x00007ff828ab9000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff827d50000 - 0x00007ff827e6a000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff828250000 - 0x00007ff8282f5000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff828100000 - 0x00007ff828215000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff806af0000 - 0x00007ff806d86000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.25290.1000_none_767a1b94446a709d\COMCTL32.dll
+0x00007ff82a580000 - 0x00007ff82a5b0000 	C:\WINDOWS\System32\IMM32.DLL
+0x00000000553b0000 - 0x0000000055482000 	E:\2021.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre\bin\msvcr100.dll
+0x0000000054b60000 - 0x00000000553a9000 	E:\2021.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre\bin\server\jvm.dll
+0x00007ff828710000 - 0x00007ff828718000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007fffcf670000 - 0x00007fffcf679000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff82a0c0000 - 0x00007ff82a12f000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff821420000 - 0x00007ff821455000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff81b380000 - 0x00007ff81b38a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffffdd80000 - 0x00007ffffdd8f000 	E:\2021.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre\bin\verify.dll
+0x00007ffffdac0000 - 0x00007ffffdae9000 	E:\2021.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre\bin\java.dll
+0x00007ffffdd60000 - 0x00007ffffdd76000 	E:\2021.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: <unknown>
+java_class_path (initial): .
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=E:\2021.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK
+JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Git\cmd;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\Giang\AppData\Local\Microsoft\WindowsApps;E:\Tool\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Program Files (x86)\Java\jre1.8.0_341\bin;C:\Users\Giang\.dotnet\tools;;D:\JetBrains Rider 2022.2.3\bin;;C:\Users\Giang\AppData\Local\Programs\Microsoft VS Code\bin
+USERNAME=Giang-baka
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 25290 (10.0.25290.1000)
+
+CPU:total 12 (initial active 12) (6 cores per cpu, 2 threads per core) family 6 model 165 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 16533188k(747224k free), swap 36552256k(21084k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.71-b00) for windows-amd64 JRE (1.8.0-adoptopenjdk-_2018_05_19_00_59-b00), built on May 19 2018 01:02:12 by "jenkins" with MS VC++ 10.0 (VS2010)
+
+time: Mon Feb 13 17:33:09 2023
+elapsed time: 1 seconds (0d 0h 0m 1s)
+

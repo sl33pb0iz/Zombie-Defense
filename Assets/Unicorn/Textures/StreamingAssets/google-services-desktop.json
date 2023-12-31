@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "919205575703",
+    "project_id": "impostor-survival",
+    "storage_bucket": "impostor-survival.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919205575703:android:27a71270ab58593cbdf052",
+        "android_client_info": {
+          "package_name": "com.rocket.impostor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919205575703-47c51ul7p75eoc7se40u2ddi4et1o7ru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEWXuZU97nD8Ct4-cRLp82-liOkIwJ2f4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919205575703-47c51ul7p75eoc7se40u2ddi4et1o7ru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

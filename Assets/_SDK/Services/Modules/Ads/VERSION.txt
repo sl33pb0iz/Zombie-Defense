@@ -1,0 +1,54 @@
+Change log
+
++++ v16/05/2017
+- Update Sdk Manager 16/05/2017
+
++++ v20/03/2017
+- BubbleAd done
+- New folder structure
+
+-------
++++ v0.46 +++ 07/03/2017
+- Last version of apiv1
+
++++ v0.44 +++ 07/03/2017
+- Add SDKUtil
+- Add AdResponse
+
++++ v0.42 +++ 06/03/2017
+- Add OnMoreGameReward
+
++++ v0.42 +++ 03/03/2017
+- Add OnAdInterstitialReward(int rewards)
+
++++ v0.40 +++ 03/03/2017
+- New UI
+- Add Vungle
+- Reward Ad
+
++++ v0.3 +++ 28/02/2017
+- New UI
+- Fix MoreGamePanel Animation
+
++++ v0.23 +++ 27/02/2017
+- New reward
+
++++ v0.15 +++ 22/02/2017
+- Change MoreGame UI
+
++++ v0.14 +++ 22/02/2017
+- Auto hide ScrollBar
+
++++ v0.13 +++ 21/02/2017
+- Add TimeScale to Popup.
+- Add OnBack to Popup and MoreGame
+
++++ v0.12 +++ 21/02/2017
+- Edit MoreGame UI.
+
++++ v0.11 +++ 21/02/2017
+- Edit method LoadAd, LoadInterstitialAd, IsInterstitialAdLoaded, ShowInterstitialAd: Set default value to parameter
+
++++ v0.1 +++ 20/02/2017
+- Create ReadMe
+

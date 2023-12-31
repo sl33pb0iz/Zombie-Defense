@@ -1,0 +1,271 @@
+{
+"skeleton": {
+	"hash": "yWBscYAyegg",
+	"spine": "4.1.23",
+	"x": -362.91,
+	"y": -78.96,
+	"width": 772,
+	"height": 681,
+	"images": "D:/Hanh/NEXTCLOUD/Stick Survival/images/",
+	"audio": "D:\\Hanh\\NEXTCLOUD\\Stick Survival"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "close", "parent": "root", "x": 11.37, "y": 278.69 },
+	{ "name": "open", "parent": "root", "x": 202.84, "y": 240.37 },
+	{ "name": "light", "parent": "root", "x": 23.09, "y": 261.54 },
+	{ "name": "star", "parent": "root", "x": -120.27, "y": 294.06 },
+	{ "name": "star2", "parent": "root", "x": 105.33, "y": 275.69, "scaleX": 0.6414, "scaleY": 0.6414 },
+	{ "name": "star3", "parent": "root", "x": -69.82, "y": 262.96, "scaleX": 0.6414, "scaleY": 0.6414 },
+	{ "name": "star4", "parent": "root", "x": 114.3, "y": 434.97, "scaleX": 0.6414, "scaleY": 0.6414 }
+],
+"slots": [
+	{ "name": "treasure", "bone": "root", "attachment": "treasure" },
+	{ "name": "close", "bone": "close", "attachment": "close" },
+	{ "name": "open", "bone": "open", "attachment": "open" },
+	{ "name": "light", "bone": "light", "attachment": "light" },
+	{ "name": "star", "bone": "star", "attachment": "star" },
+	{ "name": "star2", "bone": "star2", "attachment": "star" },
+	{ "name": "star4", "bone": "star4", "attachment": "star" },
+	{ "name": "star3", "bone": "star3", "attachment": "star" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"light": {
+				"light": { "width": 772, "height": 681 }
+			},
+			"star": {
+				"star": { "x": 0.69, "y": -0.69, "width": 30, "height": 44 }
+			},
+			"star2": {
+				"star": { "width": 30, "height": 44 }
+			},
+			"star3": {
+				"star": { "width": 30, "height": 44 }
+			},
+			"star4": {
+				"star": { "width": 30, "height": 44 }
+			}
+		}
+	},
+	{
+		"name": "basic",
+		"attachments": {
+			"close": {
+				"close": { "width": 399, "height": 202 }
+			},
+			"open": {
+				"open": { "x": -126.75, "y": 96.67, "width": 354, "height": 206 }
+			},
+			"treasure": {
+				"treasure": { "x": 11.09, "y": 142.04, "width": 396, "height": 284 }
+			}
+		}
+	},
+	{
+		"name": "gold",
+		"attachments": {
+			"close": {
+				"close": { "color": "ffe100ff", "width": 399, "height": 202 }
+			},
+			"open": {
+				"open": { "color": "ffe100ff", "x": -126.75, "y": 96.67, "width": 354, "height": 206 }
+			},
+			"treasure": {
+				"treasure": { "color": "ffe100ff", "x": 11.09, "y": 142.04, "width": 396, "height": 284 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"light": {
+				"attachment": [
+					{}
+				]
+			},
+			"open": {
+				"attachment": [
+					{}
+				]
+			},
+			"star": {
+				"attachment": [
+					{}
+				]
+			},
+			"star2": {
+				"attachment": [
+					{}
+				]
+			},
+			"star3": {
+				"attachment": [
+					{}
+				]
+			},
+			"star4": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"open": {
+		"slots": {
+			"close": {
+				"attachment": [
+					{ "time": 1.0667 }
+				]
+			},
+			"light": {
+				"rgba": [
+					{ "time": 1.0333, "color": "ffffffff" },
+					{ "time": 1.0667, "color": "ffffffcc" },
+					{ "time": 1.2, "color": "ffffffff" }
+				],
+				"attachment": [
+					{},
+					{ "time": 1.0667, "name": "light" }
+				]
+			},
+			"open": {
+				"attachment": [
+					{},
+					{ "time": 1.0667, "name": "open" }
+				]
+			},
+			"star": {
+				"rgba": [
+					{ "color": "ffffff14", "curve": "stepped" },
+					{ "time": 1.0667, "color": "ffffff14" },
+					{ "time": 1.1667, "color": "ffffffff" },
+					{ "time": 1.2667, "color": "ffffffc6" },
+					{ "time": 1.6, "color": "ffffffff" }
+				],
+				"attachment": [
+					{},
+					{ "time": 1.0667, "name": "star" }
+				]
+			},
+			"star2": {
+				"rgba": [
+					{ "color": "ffffff33", "curve": "stepped" },
+					{ "time": 1.0667, "color": "ffffff33" },
+					{ "time": 1.1667, "color": "ffffffdd" }
+				],
+				"attachment": [
+					{},
+					{ "time": 1.0667, "name": "star" }
+				]
+			},
+			"star3": {
+				"rgba": [
+					{ "color": "ffffff33", "curve": "stepped" },
+					{ "time": 1.0667, "color": "ffffff33" },
+					{ "time": 1.1667, "color": "ffffffff" }
+				],
+				"attachment": [
+					{},
+					{ "time": 1.0667, "name": "star" }
+				]
+			},
+			"star4": {
+				"rgba": [
+					{ "color": "ffffff33", "curve": "stepped" },
+					{ "time": 1.0667, "color": "ffffff33" },
+					{ "time": 1.1667, "color": "ffffffec" },
+					{ "time": 1.2667, "color": "ffffffc6" },
+					{ "time": 1.3667, "color": "ffffffff" }
+				],
+				"attachment": [
+					{},
+					{ "time": 1.0667, "name": "star" }
+				]
+			}
+		},
+		"bones": {
+			"open": {
+				"scale": [
+					{ "time": 1 },
+					{ "time": 1.0333, "y": 0.828 },
+					{ "time": 1.0667 },
+					{ "time": 1.2, "y": 0.956 },
+					{ "time": 1.3333 }
+				]
+			},
+			"light": {
+				"translate": [
+					{},
+					{ "time": 1.0667, "x": 4.76, "y": -13.94 },
+					{ "time": 1.2, "x": 4.76, "y": 0.31 }
+				],
+				"scale": [
+					{},
+					{ "time": 1.0333, "y": 0.037 },
+					{ "time": 1.0667, "x": 0.762, "y": 0.762 },
+					{ "time": 1.2 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{},
+					{ "time": 0.2, "value": 7.76 },
+					{ "time": 0.4667, "value": -5.98 },
+					{ "time": 0.6667 },
+					{ "time": 0.8, "value": 1.11 },
+					{ "time": 0.9, "value": -1.46 },
+					{ "time": 1 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.2, "y": 5.37 },
+					{ "time": 0.3333, "y": -3.22 },
+					{ "time": 0.4667, "y": 10.74 },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{ "time": 0.6667 },
+					{ "time": 1, "y": 0.882 },
+					{ "time": 1.0667 },
+					{ "time": 1.2667, "y": 0.979 },
+					{ "time": 1.5 },
+					{ "time": 2.3333, "y": 0.979 },
+					{ "time": 3 }
+				]
+			},
+			"close": {
+				"rotate": [
+					{ "time": 0.8667 },
+					{ "time": 1, "value": 2.15 }
+				],
+				"translate": [
+					{ "time": 0.8667 },
+					{ "time": 1, "x": -1.07, "y": -5.95 }
+				]
+			},
+			"star4": {
+				"scale": [
+					{ "time": 1.1333 },
+					{ "time": 1.3333, "x": 1.409, "y": 1.409 }
+				]
+			},
+			"star3": {
+				"scale": [
+					{ "time": 1.1667 },
+					{ "time": 1.2667, "x": 0.751, "y": 0.751 }
+				]
+			},
+			"star": {
+				"scale": [
+					{ "time": 1.1667 },
+					{ "time": 1.2667, "x": 0.827, "y": 0.827 }
+				]
+			}
+		}
+	}
+}
+}

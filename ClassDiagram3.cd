@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Unicorn.AnimatorOverrider" Collapsed="true">
+    <Position X="23" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\AnimatorOverrider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerAttackState" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAABAAIAAAAAAAAAAQAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerAttackState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerBaseState" Collapsed="true">
+    <Position X="13.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAAAABCAAAoAIAIAAAAAAQAAABABAAAAICBAAEAgA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerBaseState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerBuildState" Collapsed="true">
+    <Position X="18.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAAAAAAQAAAAAACAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerBuildState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerDefendState" Collapsed="true">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerDefendState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerDieState" Collapsed="true">
+    <Position X="11.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerDieState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerIdleState" Collapsed="true">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerIdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerShootState" Collapsed="true">
+    <Position X="20.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAAAAAIAAAIACABCAQAAAAAAIAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerShootState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerStateFactory" Collapsed="true">
+    <Position X="24.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAgAAAAAAAAAIAAoAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerStateFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerStateMachine">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Unicorn.PlayerStateMachine.SupState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerStateMachine.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Unicorn.PlayerStateMachine.SubState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerStateMachine.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>JFYAAAByQMEAQAiAEAABASDREAgAAVgAYgAAIA8AgBA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerStateMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.PlayerWalkState" Collapsed="true">
+    <Position X="16" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAEAAAAAAIAAAAAAAAAAQAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\PlayerWalkState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unicorn.SetAttackType" Collapsed="true">
+    <Position X="24.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAEAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_game\Scripts\Actor\Player\PlayerState\SetAttackType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
